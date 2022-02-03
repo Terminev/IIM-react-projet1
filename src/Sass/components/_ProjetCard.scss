@@ -1,0 +1,19 @@
+#ProjetCard {
+    margin: 20px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: yellow;
+    a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        img{
+            width: 100%;
+            max-height: 200px;
+            border-radius: 15px 15px 0 0;
+        }
+        p{
+            padding: 10px 10px 20px 10px;
+        }
+    }
+}

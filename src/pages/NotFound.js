@@ -1,7 +1,13 @@
+import "../Sass/components/_NofFound.scss"
+
 const NotFound = () => {
     return (
-        <div>
-            <h1>Not found</h1>
+        <div id="NotFound">
+            <div id="container">
+                <h1>Page Not found</h1>
+                <p>Nothing Found</p>
+                <a href="/">Return to Home</a>
+            </div>
         </div>
     );
 };

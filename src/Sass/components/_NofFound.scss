@@ -1,0 +1,15 @@
+#NotFound {
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    #container{
+        line-height: 60px;
+        h1 {
+            font-size: 50px;
+            font-family: sans-serif;
+        }
+    }
+}
