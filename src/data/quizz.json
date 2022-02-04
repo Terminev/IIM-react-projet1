@@ -4,6 +4,7 @@
             "id":1,
             "theme": "Développement",
             "img": "/img/quizzImg/dev.jpg",
+            "slug":"quizz1",
             "titre": "Les bases du développement",
             "questions": [
                 {
@@ -152,6 +153,7 @@
             "id":2,
             "theme": "Jeux Vidéos",
             "img": "img",
+            "slug":"quizz2",
             "titre": "titre du quizz2",
             "questions": [
                 {
@@ -167,7 +169,7 @@
                             "reponse": "reponse4"
                         }
                     ],
-                    "answer": "la bonne réponse est ...."
+                    "answer": "reponse1"
                 },{
                     "titrequestion": "titre de la question2",
                     "reponses": [
@@ -300,6 +302,7 @@
             "id":3,
             "theme": "le theme",
             "img": "img",
+            "slug":"quizz3",
             "titre": "titre du quizz1",
             "questions": [
                 {
@@ -448,6 +451,7 @@
             "id":4,
             "theme": "le theme",
             "img": "img",
+            "slug":"quizz4",
             "titre": "titre du quizz1",
             "questions": [
                 {
