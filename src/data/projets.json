@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Portfolio",
             "description": "Réalisation de mon Portfolio en utilisant la technologie React. L'objectif de mon portfolio étant de mettre en avant mes réalisations et mes capacités en tant que développeur web.",
-            "url": "url",
+            "url": "https://portfolio.alexandre-caramel.fr/projet/1",
             "images": [
                 "/img/portfolio.png",
                 "/img/portfolio.png",
@@ -15,7 +15,7 @@
             "id": 2,
             "title": "Projet Sass",
             "description": "Projet d'intégration d'une maquette réalisé en Sass et responsive.",
-            "url": "url",
+            "url": "https://portfolio.alexandre-caramel.fr/projet/6",
             "images": [
                 "/img/sass.png",
                 "/img/sass.png",
@@ -26,7 +26,7 @@
             "id": 3,
             "title": "Bot Discord",
             "description": "Réalisation d'un projet utilisant Python ainsi que la librairie Discord Python. L'objectif de ce projet est l'automatisation de certaines tâches telles que la recherche de jeux vidéo ou l'ajout d'un rôle lors d'un click sur une emote.",
-            "url": "url",
+            "url": "https://portfolio.alexandre-caramel.fr/projet/3",
             "images": [
                 "/img/botdiscord.png"
             ]
@@ -35,7 +35,7 @@
             "id": 4,
             "title": "EarlyStay",
             "description": "Réalisation d'un site internet dans le cadre d'une BAP (Bourse aux projets), suite à la demande de notre client EarlyStay, qui souhaitait organiser la vente en ligne de leurs vols aériens. Ce site internet a été réalisé en utilisant les technologies Laravel / Vue.js",
-            "url": "url",
+            "url": "https://portfolio.alexandre-caramel.fr/projet/2",
             "images": [
                 "/img/earlystay.png"
             ]
@@ -45,7 +45,7 @@
             "id": 5,
             "title": "FCPE Simone Veil",
             "description": "Réalisation d'un site internet dans le cadre d'une BAP (Bourse aux projets), suite à la demande de notre client la FCPE Simone Veil, qui souhaitait avoir un site internet afin de pouvoir contacter les parents d'élèves et transmettre les informations de l'école. Pour réaliser ce projet nous avons utilisé Wordpress.",
-            "url": "url",
+            "url": "https://portfolio.alexandre-caramel.fr/projet/5",
             "images": [
                 "/img/fcpe.png"
             ]

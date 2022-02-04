@@ -29,7 +29,7 @@
         cursor: pointer;
         width: fit-content;
         margin: 10px auto;
-        transition: 0.3s;
+        transition: 0.5s;
         a{
             color: black;
             text-decoration: none;
@@ -37,5 +37,6 @@
     }
     #link:hover{
         transform: scale(1.1);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 }
