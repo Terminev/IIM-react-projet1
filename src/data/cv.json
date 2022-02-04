@@ -50,17 +50,27 @@
                 {
                     "id": 1,
                     "nom": "Nuxt",
-                    "niveau": "bon"
+                    "niveau": "9"
                 },
                 {
                     "id": 2,
                     "nom": "Vue.js",
-                    "niveau": "bon"
+                    "niveau": "7"
                 },
                 {
                     "id": 3,
                     "nom": "SEO",
-                    "niveau": "bon"
+                    "niveau": "6"
+                },
+                {
+                    "id": 4,
+                    "nom": "Javascript",
+                    "niveau": "8"
+                },
+                {
+                    "id": 5,
+                    "nom": "Wordpress",
+                    "niveau": "7"
                 }
             ],
             "diplomes": [

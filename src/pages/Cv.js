@@ -50,7 +50,9 @@ const Cv = () => {
                     {
                     Data.competences.map((data, index) => (
                         <div key={index}>
-                            <h3>{data.nom} - {data.niveau}</h3>
+                            <h3>{data.nom}</h3>
+                            <input type="range" name='niveau' min="0" max="10" value={data.niveau} disabled/>
+                            <label htmlFor="niveau"> {data.niveau}</label>
                         </div>
                     ))
                     }
