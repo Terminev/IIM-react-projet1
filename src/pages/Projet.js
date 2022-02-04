@@ -7,7 +7,8 @@ const Projet = () => {
     return (
         <div id="Projet">
             <h1>Projets</h1>
-            <div className="ProjetContainer">                
+            <div className="ProjetContainer">    
+            {/* envoyer la data vers le composant PorjetCard pour chaque projet             */}
                 {
                     Data.projets.map((data, index) => (
                         <ProjetCard key={index} title={data.title} img={data.images[0]} desc={data.description} id={data.id}/>

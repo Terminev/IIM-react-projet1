@@ -21,7 +21,7 @@ const Cv = () => {
                     <h3>Linkedin: <a href={Data.url}  rel="noreferrer" target="_blank">Visiter Linkedin</a></h3>
                     <section id='experience'>
                         <h2>Expériences</h2>
-                        {/* permet d'afficher toutes les expériences présente dans le JSON */}
+                        {/* permets d'afficher toutes les expériences présente dans le JSON */}
                     {
                     Data.experiences.map((data, index) => (
                         <div key={index}>
@@ -34,7 +34,7 @@ const Cv = () => {
                     </section>
                     <section id='formation'>
                         <h2>Formation</h2>
-                        {/* permet d'afficher toutes les formations présente dans le JSON */}
+                        {/* permets d'afficher toutes les formations présente dans le JSON */}
                     {
                     Data.formation.map((data, index) => (
                         <div key={index}>
@@ -46,7 +46,7 @@ const Cv = () => {
                     </section>
                     <section id='competences'>
                         <h2>Compétences</h2>
-                    {/* permet d'afficher toutes les compétences présente dans le JSON */}
+                    {/* permets d'afficher toutes les compétences présente dans le JSON */}
                     {
                     Data.competences.map((data, index) => (
                         <div key={index}>
@@ -59,7 +59,7 @@ const Cv = () => {
                     </section>
                     <section id='diplomes'>
                         <h2>Diplômes</h2>
-                    {/* permet d'afficher tous les displomes présent dans le JSON */}
+                    {/* permets d'afficher tous les displômes présents dans le JSON */}
                     {
                     Data.diplomes.map((data, index) => (
                         <div key={index}>
