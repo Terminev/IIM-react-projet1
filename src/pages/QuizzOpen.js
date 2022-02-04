@@ -21,12 +21,10 @@ const QuizzOpen = (props) => {
 
     // Permet de vérifier la réponse en fonction de l'input sélectionné
     function validation(){
-        console.log(count);
         if(count < 9){
             const valueResponse = document.querySelector('input[name="quizz"]:checked').value
             if(valueResponse === QuestionQuizz[count].answer){
                 setScore(score + 1)
-                console.log(score);
             }
             document.querySelector('input[name="quizz"]:checked').checked = false;
             setCount(count + 1)
@@ -43,7 +41,6 @@ const QuizzOpen = (props) => {
         document.querySelector('input[name="quizz"]:checked').checked = false;
         setCount(0)
         setScore(0)
-        
     }
 
     return (

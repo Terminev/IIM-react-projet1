@@ -3,8 +3,6 @@ import QuizzCard from "../components/QuizzCard";
 import '../Sass/components/_QuizzHome.scss';
 
 const QuizzHome = () => {
-
-    console.log(QuizzData.quizz);
     return (
         <section id="QuizzHome">
             <div id="QuizzContainer">

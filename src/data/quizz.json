@@ -152,9 +152,9 @@
         },{
             "id":2,
             "theme": "Jeux Vidéos",
-            "img": "img",
+            "img": "/img/quizzImg/jeux.jpg",
             "slug":"quizz2",
-            "titre": "titre du quizz2",
+            "titre": "Les Jeux Vidéos",
             "questions": [
                 {
                     "titrequestion": "titre de la question1",
@@ -300,10 +300,10 @@
             ]
         },{
             "id":3,
-            "theme": "le theme",
-            "img": "img",
+            "theme": "Histoire",
+            "img": "/img/quizzImg/histoire.jpg",
             "slug":"quizz3",
-            "titre": "titre du quizz1",
+            "titre": "L'Histoire de France",
             "questions": [
                 {
                     "titrequestion": "titre de la question1",
@@ -449,10 +449,10 @@
             ]
         },{
             "id":4,
-            "theme": "le theme",
-            "img": "img",
+            "theme": "Culture",
+            "img": "/img/quizzImg/culture.jpg",
             "slug":"quizz4",
-            "titre": "titre du quizz1",
+            "titre": "Culture générale",
             "questions": [
                 {
                     "titrequestion": "titre de la question1",
