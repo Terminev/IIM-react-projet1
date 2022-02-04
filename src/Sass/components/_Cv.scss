@@ -1,14 +1,45 @@
 #Cv {
     min-height: 90vh;
+
     h1 {
         text-align: center;
         padding: 20px 0;
         font-size: 40px;
     }
-    .CvContainer{
+
+    .CvContainer {
+        margin: 0 auto;
+        width: 95%;
+        justify-content: space-around;
         display: flex;
-        #informations{
-            
+
+        img {
+            max-width: 350px;
+            height: fit-content;
+        }
+
+        #informations {
+            width: 50%;
+            h2{
+                padding: 20px 0;
+            }
+            h3{
+                padding: 10px 0;
+                font-weight: 500;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            h4{
+                padding: 0 0 10px 0;
+                font-weight: 500;
+            }
+            #experience{
+                h3 {
+                    font-weight: 600;
+                }
+            }
         }
     }
 

@@ -6,7 +6,7 @@
             "url": "https://www.linkedin.com/in/alexandre-caramel/",
             "informations": [
                 {
-                    "adresse": "5 rue pierre",
+                    "adresse": "5 rue pierre jean, Antony, 92160",
                     "telephone": "0102030405",
                     "email": "caramel.alexandre@gmail.com"
                 }
@@ -23,7 +23,7 @@
                     "poste": "Développeur Full Stack",
                     "entreprise": "SEQUANA",
                     "durée": "3 mois",
-                    "mission": "Durant mon stage de deux mois, deux missions m'ont été confiées :<br/>- Mettre en place un google photos manager en utilisant l'api de google.<br/>- Créer un outil de suivi de release pour les développeurs.<br/>Ces deux missions ont été réalisées en utilisant les technologies Nuxt et Firebase"
+                    "mission": "Durant mon stage de deux mois, deux missions m'ont été confiées. Mettre en place un google photos manager en utilisant l'api de google. Créer un outil de suivi de release pour les développeurs. Ces deux missions ont été réalisées en utilisant les technologies Nuxt et Firebase"
                 },{
                     "id": 3,
                     "poste": "Développeur web Front-end",

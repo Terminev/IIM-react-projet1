@@ -17,9 +17,9 @@ const Cv = () => {
                     <h2>{Data.title}</h2>
                     <h3>Téléphone: {Data.informations[0].telephone}</h3>
                     <h3>Adresse: {Data.informations[0].adresse}</h3>
-                    <h3>Adresse: {Data.informations[0].email}</h3>
+                    <h3>Email: {Data.informations[0].email}</h3>
                     <p>{Data.apropos}</p>
-                    <a href={Data.url}  rel="noreferrer" target="_blank">Linkedin</a>
+                    <h3>Linkedin: <a href={Data.url}  rel="noreferrer" target="_blank">Visiter Linkedin</a></h3>
                     <section id='experience'>
                         <h2>Expériences</h2>
                     {
@@ -33,32 +33,32 @@ const Cv = () => {
                     }
                     </section>
                     <section id='formation'>
+                        <h2>Formation</h2>
                     {
                     Data.formation.map((data, index) => (
                         <div key={index}>
-                            <h3>{data.ecole}</h3>
-                            <h4>{data.annee}</h4>
+                            <h3>{data.ecole} - {data.annee}</h3>
                             <p>{data.specialité}</p>
                         </div>
                     ))
                     }
                     </section>
                     <section id='competences'>
+                        <h2>Compétences</h2>
                     {
                     Data.competences.map((data, index) => (
                         <div key={index}>
-                            <h3>{data.nom}</h3>
-                            <h4>{data.niveau}</h4>
+                            <h3>{data.nom} - {data.niveau}</h3>
                         </div>
                     ))
                     }
                     </section>
                     <section id='diplomes'>
+                        <h2>Diplômes</h2>
                     {
                     Data.diplomes.map((data, index) => (
                         <div key={index}>
-                            <h3>{data.diplome}</h3>
-                            <h4>{data.annee}</h4>
+                            <h3>{data.diplome} - {data.annee}</h3>
                         </div>
                     ))
                     }
