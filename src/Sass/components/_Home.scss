@@ -22,5 +22,30 @@
             max-width: 40%;
         }
     }
+
+    @media screen and (max-width: 1000px){
+        .homeContainer{
+            flex-direction: column;
+            justify-content: center;
+            height: 90vh;
+
+            img {
+                max-width: 80%;
+            }
+        }
+    }
+    @media screen and (max-width: 550px){
+        .homeContainer{
+            .homeInformations{
+                h2{
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
     
 }
+

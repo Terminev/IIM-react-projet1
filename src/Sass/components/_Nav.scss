@@ -41,5 +41,18 @@
             }
         }
     }
+
+    @media screen and (max-width: 550px){
+        div {
+            display: block;
+            text-align: center;
+            height: auto;
+            padding: 15px 0;
+            ul {
+                padding-top: 10px;
+                justify-content: center;
+            }
+        }
+    }
 }
 

@@ -1,14 +1,14 @@
 import "../Sass/components/_ProjetCard.scss";
-import imgHello from '../img/img/hello.png'
 
-const ProjetCard = ({title, desc, id}) => {
+const ProjetCard = ({title, desc, id, img}) => {
+    // console.log(data.description.substr(0,10));
     const link = '/projets/' + id
     return (
         <section id="ProjetCard">
             <a href={link}>
-                <img src={imgHello} alt="" />
+                <img src={img} alt="Projet" />
                 <h3>{title}</h3>
-                <p>{desc}</p>
+                <p>{desc.substr(0,60)}...</p>
             </a>
         </section>
     )

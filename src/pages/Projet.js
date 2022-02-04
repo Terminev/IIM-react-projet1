@@ -10,7 +10,7 @@ const Projet = () => {
             <div className="ProjetContainer">                
                 {
                     Data.projets.map((data, index) => (
-                        <ProjetCard key={index} title={data.title} desc={data.description} id={data.id}/>
+                        <ProjetCard key={index} title={data.title} img={data.images[0]} desc={data.description} id={data.id}/>
                     ))
                 }
             </div>

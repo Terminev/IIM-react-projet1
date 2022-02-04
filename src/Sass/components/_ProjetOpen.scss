@@ -5,10 +5,16 @@
         text-align: center;
         padding: 40px 0;
     }
-    img {
+    #imgContainer{
         display: flex;
+        width: 90%;
         margin: 0 auto;
-        max-width: 450px;
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+            max-width: 350px;
+            margin: 10px;
+        }
     }
     p {
         width: 70%;
