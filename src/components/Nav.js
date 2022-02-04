@@ -3,7 +3,6 @@ import "../Sass/components/_Nav.scss";
 const Nav = () => {
 
     const currentURL = window.location.pathname
-    console.log(currentURL);
 
     return (
         <section id="Nav">
@@ -39,8 +38,15 @@ const Nav = () => {
                                 <li><a href="/projets" className="active">Projets</a></li>
                             </ul>
                         )
+                    }else{
+                        return (
+                            <ul>
+                                <li><a href="/">Accueil</a></li>
+                                <li><a href="/cv">CV</a></li>
+                                <li><a href="/projets">Projets</a></li>
+                            </ul>
+                        )
                     }
-                    return null
                 })()}
             </div>
         </section>

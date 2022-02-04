@@ -1,0 +1,75 @@
+{
+    "cv": [
+        {
+            "title": "Alexandre Caramel",
+            "apropos": "Je me présente: Alexandre Caramel, 21 ans, je réside sur Antony et je suis titulaire d'un Baccalauréat Scientifique option Science de l'Ingénieur. Je suis passionné par le développement web, vous pourrez trouver ci-dessous la liste de tous les projets que j'ai pu réaliser.",
+            "url": "https://www.linkedin.com/in/alexandre-caramel/",
+            "informations": [
+                {
+                    "adresse": "5 rue pierre",
+                    "telephone": "0102030405",
+                    "email": "caramel.alexandre@gmail.com"
+                }
+            ],
+            "experiences": [
+                {
+                    "id": 1,
+                    "poste": "Chef de projet",
+                    "entreprise": "New Heroes",
+                    "durée": "3 mois",
+                    "mission": "Dans le cadre d'une Bourse aux projets organisée par l'IIM, j'ai eu l'occasion de travailler en tant que Chef de projet pour la société NewHeroes.Au cours de ces 4 mois en tant que chef de projet, je me suis occupé de superviser une équipe de 6 personnes composé de développeur web, de personnes en création et design ainsi que des personnes en communication digitale et e-business. L'objectif était la création d'une plateforme mettant en relation des entreprises avec des sportifs souhaitant réaliser une reconversion professionnelle."
+                },{
+                    "id": 2,
+                    "poste": "Développeur Full Stack",
+                    "entreprise": "SEQUANA",
+                    "durée": "3 mois",
+                    "mission": "Durant mon stage de deux mois, deux missions m'ont été confiées :<br/>- Mettre en place un google photos manager en utilisant l'api de google.<br/>- Créer un outil de suivi de release pour les développeurs.<br/>Ces deux missions ont été réalisées en utilisant les technologies Nuxt et Firebase"
+                },{
+                    "id": 3,
+                    "poste": "Développeur web Front-end",
+                    "entreprise": "EarlyStay",
+                    "durée": "3 mois",
+                    "mission": "Dans le cadre d'une Bourse aux projets organisée par l'IIM, j'ai eu l'occasion de travailler en tant que développeur web - Front end pour la société EarlyStay."
+                }
+            ],
+            "formation": [
+                {
+                    "id": 1,
+                    "ecole": "IIM",
+                    "annee": "2019-2022",
+                    "specialité":"Developpement Web"
+                },
+                {
+                    "id": 2,
+                    "ecole": "Lycée Descartes",
+                    "annee": "2015-2019",
+                    "specialité":"Baccalauréat"
+                }
+            ],
+            "competences": [
+                {
+                    "id": 1,
+                    "nom": "Nuxt",
+                    "niveau": "bon"
+                },
+                {
+                    "id": 2,
+                    "nom": "Vue.js",
+                    "niveau": "bon"
+                },
+                {
+                    "id": 3,
+                    "nom": "SEO",
+                    "niveau": "bon"
+                }
+            ],
+            "diplomes": [
+                {
+                    "id": 1,
+                    "diplome": "Baccalauréat",
+                    "annee": "2019"
+                }
+            ]
+        }
+    ]
+}

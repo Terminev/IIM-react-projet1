@@ -11,7 +11,7 @@ const Home = () => {
                     <p>Développeur Web</p>
                     <p>IIM - Promo 2024</p>
                 </div>
-                <img src={imgHello} alt="hello" />
+                <img src={imgHello} alt="hello"/>
             </div>
         </section>
     );
