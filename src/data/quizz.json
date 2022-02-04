@@ -2,9 +2,9 @@
     "quizz": [
         {
             "id":1,
-            "theme": "le theme",
-            "img": "img",
-            "titre": "titre du quizz1",
+            "theme": "Développement",
+            "img": "/img/quizzImg/dev.jpg",
+            "titre": "Les bases du développement",
             "questions": [
                 {
                     "titrequestion": "titre de la question1",
@@ -19,32 +19,32 @@
                             "reponse": "reponse4"
                         }
                     ],
-                    "answer": "la bonne réponse est ...."
+                    "answer": "reponse1"
                 },{
                     "titrequestion": "titre de la question2",
                     "reponses": [
                         {
-                            "reponse": "reponse1"
+                            "reponse": "reponsee1"
                         },{
-                            "reponse": "reponse2"
+                            "reponse": "reponsee2"
                         },{
-                            "reponse": "reponse3"
+                            "reponse": "reponsee3"
                         },{
-                            "reponse": "reponse4"
+                            "reponse": "reponsee4"
                         }
                     ],
-                    "answer": "la bonne réponse est ...."
+                    "answer": "reponsee2"
                 },{
                     "titrequestion": "titre de la question3",
                     "reponses": [
                         {
-                            "reponse": "reponse1"
+                            "reponse": "reponseee1"
                         },{
-                            "reponse": "reponse2"
+                            "reponse": "reponseee2"
                         },{
-                            "reponse": "reponse3"
+                            "reponse": "reponseee3"
                         },{
-                            "reponse": "reponse4"
+                            "reponse": "reponseee4"
                         }
                     ],
                     "answer": "la bonne réponse est ...."
@@ -150,7 +150,7 @@
             ]
         },{
             "id":2,
-            "theme": "le theme",
+            "theme": "Jeux Vidéos",
             "img": "img",
             "titre": "titre du quizz2",
             "questions": [
