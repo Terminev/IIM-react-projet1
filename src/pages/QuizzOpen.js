@@ -29,6 +29,10 @@ const QuizzOpen = (props) => {
             document.querySelector('input[name="quizz"]:checked').checked = false;
             setCount(count + 1)
         }else{
+            const valueResponse = document.querySelector('input[name="quizz"]:checked').value
+            if(valueResponse === QuestionQuizz[count].answer){
+                setScore(score + 1)
+            }
             document.getElementById("QuizzEnCours").style.display = "none"
             document.getElementById("QuizzTermine").style.display = "block"
         }
@@ -47,19 +51,21 @@ const QuizzOpen = (props) => {
         <section id="QuizzOpen">
             <div id="QuizzEnCours">
                 <h2>Score: {score} </h2>
+                <h3>{QuestionQuizz[count].titrequestion}</h3>
                 {
-                        QuestionQuizz[count].reponses.map((data, index) => (
-                            <div key={index}>
-                                <input type="radio" id={index} name="quizz" value={data.reponse} />
-                                <label htmlFor={index} > {data.reponse} </label>
-                            </div>
-                        ))
+                    QuestionQuizz[count].reponses.map((data, index) => (
+                        <div key={index}>
+                            <input type="radio" id={index} name="quizz" value={data.reponse} />
+                            <label htmlFor={index} > {data.reponse} </label>
+                        </div>
+                    ))
                 }
                 <button id="submit" onClick={()=> validation()}>Valider</button>
             </div>
             <div id="QuizzTermine">
                 <h2>Le Quizz est terminé</h2>
                 <p>Vous avez eu {score}/10</p>
+                <button><a href="/quizz">Accueil</a></button>
                 <button onClick={()=> relancer()}>Rejouer</button>
             </div>
         </section>
