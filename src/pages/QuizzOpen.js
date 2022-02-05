@@ -15,9 +15,10 @@ const QuizzOpen = (props) => {
         QuestionQuizz[i].reponses.sort(() => Math.random() - 0.5);
     }
     useEffect(()=> {
+        console.log("dans le use");
         // Enregistrer le score de l'utilisateur dans le localStorage
         localStorage.setItem(quizzData.quizz[idQuizz].slug, score)
-    },[validation])
+    },[score])
 
     // Permet de vérifier la réponse en fonction de l'input sélectionné
     function validation(){

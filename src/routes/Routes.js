@@ -6,6 +6,7 @@ import Projet from '../pages/Projet';
 import ProjetOpen from '../pages/ProjetOpen';
 import QuizzHome from '../pages/QuizzHome';
 import QuizzOpen from '../pages/QuizzOpen';
+import Meteo from "../pages/Meteo";
 
 
 const Rooter = () => (
@@ -17,6 +18,7 @@ const Rooter = () => (
                 <Route exact path="/cv" component={Cv}/>
                 <Route exact path="/quizz" component={QuizzHome}/>
                 <Route path="/quizz/:quizzId" component={QuizzOpen}/>
+                <Route path="/meteo" component={Meteo}/>
                 <Route component={NoMatch}/>
             </Switch>
         </Router>
