@@ -16,7 +16,6 @@ const QuizzCard = ({theme, titre, img, id}) => {
                         )
                     }
                 })()}
-                <h4></h4>
             </a>
         </section>
     )
