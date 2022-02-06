@@ -1,8 +1,20 @@
 import "../Sass/components/_Nav.scss";
+import Dark from "../img/icon/moon.png";
+import Light from "../img/icon/sun.png";
 
 const Nav = () => {
 
     const currentURL = window.location.pathname
+
+    const ChangeMode = () =>{
+        if(localStorage.getItem('mode') === "light"){
+            localStorage.setItem('mode', 'dark')
+            window.location.reload();
+        }else{
+            localStorage.setItem('mode', 'light')
+            window.location.reload();
+        }
+    }
 
     return (
         <section id="Nav">
@@ -20,6 +32,17 @@ const Nav = () => {
                                 <li><a href="/projets">Projets</a></li>
                                 <li><a href="/quizz">Quizz</a></li>
                                 <li><a href="/meteo">Météo</a></li>
+                                {(()=>{
+                                    if(localStorage.getItem('mode') === 'light'){
+                                        return(
+                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
+                                        )
+                                    }else{
+                                        return(
+                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
+                                            )
+                                    }
+                                })()}
                             </ul>
                         )
                     }
@@ -31,6 +54,17 @@ const Nav = () => {
                                 <li><a href="/projets">Projets</a></li>
                                 <li><a href="/quizz">Quizz</a></li>
                                 <li><a href="/meteo">Météo</a></li>
+                                {(()=>{
+                                    if(localStorage.getItem('mode') === 'light'){
+                                        return(
+                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
+                                        )
+                                    }else{
+                                        return(
+                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
+                                            )
+                                    }
+                                })()}
                             </ul>
                         )
                     }
@@ -42,6 +76,17 @@ const Nav = () => {
                                 <li><a href="/projets" className="active">Projets</a></li>
                                 <li><a href="/quizz">Quizz</a></li>
                                 <li><a href="/meteo">Météo</a></li>
+                                {(()=>{
+                                    if(localStorage.getItem('mode') === 'light'){
+                                        return(
+                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
+                                        )
+                                    }else{
+                                        return(
+                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
+                                            )
+                                    }
+                                })()}
                             </ul>
                         )
                     }else if (currentURL === '/quizz') {
@@ -52,6 +97,17 @@ const Nav = () => {
                                 <li><a href="/projets">Projets</a></li>
                                 <li><a href="/quizz" className="active">Quizz</a></li>
                                 <li><a href="/meteo">Météo</a></li>
+                                {(()=>{
+                                    if(localStorage.getItem('mode') === 'light'){
+                                        return(
+                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
+                                        )
+                                    }else{
+                                        return(
+                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
+                                            )
+                                    }
+                                })()}
                             </ul>
                         )
                     }else if (currentURL === '/meteo') {
@@ -62,6 +118,17 @@ const Nav = () => {
                                 <li><a href="/projets">Projets</a></li>
                                 <li><a href="/quizz" >Quizz</a></li>
                                 <li><a href="/meteo" className="active">Météo</a></li>
+                                {(()=>{
+                                    if(localStorage.getItem('mode') === 'light'){
+                                        return(
+                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
+                                        )
+                                    }else{
+                                        return(
+                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
+                                            )
+                                    }
+                                })()}
                             </ul>
                         )
                     }else{
@@ -72,6 +139,17 @@ const Nav = () => {
                                 <li><a href="/projets">Projets</a></li>
                                 <li><a href="/quizz">Quizz</a></li>
                                 <li><a href="/meteo">Météo</a></li>
+                                {(()=>{
+                                    if(localStorage.getItem('mode') === 'light'){
+                                        return(
+                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
+                                        )
+                                    }else{
+                                        return(
+                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
+                                            )
+                                    }
+                                })()}
                             </ul>
                         )
                     }

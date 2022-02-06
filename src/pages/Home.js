@@ -1,8 +1,7 @@
 import '../Sass/components/_Home.scss';
-import imgHello from '../img/img/hello.png'
+import imgHello from '../img/img/hello.png';
 
 const Home = () => {
-
     return (
         <section id='home'>
             <div className='homeContainer'>
