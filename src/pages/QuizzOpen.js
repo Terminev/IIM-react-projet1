@@ -20,7 +20,7 @@ const QuizzOpen = (props) => {
     useEffect(()=> {
         // Enregistrer le score de l'utilisateur dans le localStorage
         localStorage.setItem(quizzData.quizz[idQuizz].slug, score)
-    },[score])
+    },[score, idQuizz])
 
     // Permet de vérifier la réponse en fonction de l'input sélectionné
     function validation(){
