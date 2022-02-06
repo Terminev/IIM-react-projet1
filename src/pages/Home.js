@@ -6,17 +6,16 @@ const Home = () => {
     return (
         <>
         <Nav></Nav>
-            <section id='home'>
-                <Nav></Nav>
-                <div className='homeContainer'>
-                    <div className='homeInformations'>
-                        <h2>Alexandre Caramel</h2>
-                        <p>Développeur Web</p>
-                        <p>IIM - Promo 2024</p>
-                    </div>
-                    <img src={imgHello} alt="hello"/>
+        <section id='home'>
+            <div className='homeContainer'>
+                <div className='homeInformations'>
+                    <h2>Alexandre Caramel</h2>
+                    <p>Développeur Web</p>
+                    <p>IIM - Promo 2024</p>
                 </div>
-            </section>
+                <img src={imgHello} alt="hello"/>
+            </div>
+        </section>
         </>
     );
 };
