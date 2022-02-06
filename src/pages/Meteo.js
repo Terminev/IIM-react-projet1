@@ -1,13 +1,17 @@
 import MeteoComponent from '../components/MeteoComponent';
+import Nav from '../components/Nav';
 import '../Sass/components/_Meteo.scss';
 
 const Meteo = () => {
 
     return (
-        <section id='Meteo'>
-            {/* importation du component Meteo */}
-            <MeteoComponent/>
-        </section>
+        <>
+        <Nav></Nav>
+            <section id='Meteo'>
+                {/* importation du component Meteo */}
+                <MeteoComponent/>
+            </section>
+        </>
     );
 };
 

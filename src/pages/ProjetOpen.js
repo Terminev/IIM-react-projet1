@@ -1,3 +1,4 @@
+import Nav from "../components/Nav";
 import Data from "../data/projets.json";
 import "../Sass/components/_ProjetOpen.scss";
 
@@ -9,6 +10,8 @@ const ProjetOpen = (props) => {
     const data = Data.projets[idProject-1];
 
     return (
+        <>
+        <Nav></Nav>
         <div id="ProjetOpen">
             <h2>{data.title}</h2>
             {/* afficher toutes les photos */}
@@ -26,6 +29,7 @@ const ProjetOpen = (props) => {
             </div>
             <p>{data.description}</p>
         </div>
+        </>
     );
 };
 

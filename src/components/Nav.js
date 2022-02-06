@@ -1,10 +1,9 @@
 import "../Sass/components/_Nav.scss";
 import Dark from "../img/icon/moon.png";
 import Light from "../img/icon/sun.png";
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
-
-    const currentURL = window.location.pathname
 
     const ChangeMode = () =>{
         if(localStorage.getItem('mode') === "light"){
@@ -22,138 +21,24 @@ const Nav = () => {
                 <a href="/">
                     <h1>Alexandre Caramel</h1>
                 </a>
-                {/* Verifier sur quel URL nous nous trouvons */}
-                {(()=> {
-                    if (currentURL === '/') {
-                        return (
-                            <ul>
-                                <li><a href="/" className="active">Accueil</a></li>
-                                <li><a href="/cv">CV</a></li>
-                                <li><a href="/projets">Projets</a></li>
-                                <li><a href="/quizz">Quizz</a></li>
-                                <li><a href="/meteo">Météo</a></li>
-                                {(()=>{
-                                    if(localStorage.getItem('mode') === 'light'){
-                                        return(
-                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
-                                        )
-                                    }else{
-                                        return(
-                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
-                                            )
-                                    }
-                                })()}
-                            </ul>
-                        )
-                    }
-                    else if (currentURL === '/cv') {
-                        return (
-                            <ul>
-                                <li><a href="/">Accueil</a></li>
-                                <li><a href="/cv" className="active">CV</a></li>
-                                <li><a href="/projets">Projets</a></li>
-                                <li><a href="/quizz">Quizz</a></li>
-                                <li><a href="/meteo">Météo</a></li>
-                                {(()=>{
-                                    if(localStorage.getItem('mode') === 'light'){
-                                        return(
-                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
-                                        )
-                                    }else{
-                                        return(
-                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
-                                            )
-                                    }
-                                })()}
-                            </ul>
-                        )
-                    }
-                    else if (currentURL === '/projets') {
-                        return (
-                            <ul>
-                                <li><a href="/">Accueil</a></li>
-                                <li><a href="/cv">CV</a></li>
-                                <li><a href="/projets" className="active">Projets</a></li>
-                                <li><a href="/quizz">Quizz</a></li>
-                                <li><a href="/meteo">Météo</a></li>
-                                {(()=>{
-                                    if(localStorage.getItem('mode') === 'light'){
-                                        return(
-                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
-                                        )
-                                    }else{
-                                        return(
-                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
-                                            )
-                                    }
-                                })()}
-                            </ul>
-                        )
-                    }else if (currentURL === '/quizz') {
-                        return (
-                            <ul>
-                                <li><a href="/">Accueil</a></li>
-                                <li><a href="/cv">CV</a></li>
-                                <li><a href="/projets">Projets</a></li>
-                                <li><a href="/quizz" className="active">Quizz</a></li>
-                                <li><a href="/meteo">Météo</a></li>
-                                {(()=>{
-                                    if(localStorage.getItem('mode') === 'light'){
-                                        return(
-                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
-                                        )
-                                    }else{
-                                        return(
-                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
-                                            )
-                                    }
-                                })()}
-                            </ul>
-                        )
-                    }else if (currentURL === '/meteo') {
-                        return (
-                            <ul>
-                                <li><a href="/">Accueil</a></li>
-                                <li><a href="/cv">CV</a></li>
-                                <li><a href="/projets">Projets</a></li>
-                                <li><a href="/quizz" >Quizz</a></li>
-                                <li><a href="/meteo" className="active">Météo</a></li>
-                                {(()=>{
-                                    if(localStorage.getItem('mode') === 'light'){
-                                        return(
-                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
-                                        )
-                                    }else{
-                                        return(
-                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
-                                            )
-                                    }
-                                })()}
-                            </ul>
-                        )
-                    }else{
-                        return (
-                            <ul>
-                                <li><a href="/">Accueil</a></li>
-                                <li><a href="/cv">CV</a></li>
-                                <li><a href="/projets">Projets</a></li>
-                                <li><a href="/quizz">Quizz</a></li>
-                                <li><a href="/meteo">Météo</a></li>
-                                {(()=>{
-                                    if(localStorage.getItem('mode') === 'light'){
-                                        return(
-                                            <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
-                                        )
-                                    }else{
-                                        return(
-                                            <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
-                                            )
-                                    }
-                                })()}
-                            </ul>
-                        )
-                    }
-                })()}
+                <ul>
+                    <li><NavLink exact to="/" activeClassName="active">Accueil</NavLink></li>
+                    <li><NavLink exact to="/cv" activeClassName="active">CV</NavLink></li>
+                    <li><NavLink exact to="/projets" activeClassName="active">Projets</NavLink></li>
+                    <li><NavLink exact to="/quizz" activeClassName="active">Quizz</NavLink></li>
+                    <li><NavLink exact to="/meteo" activeClassName="active">Météo</NavLink></li>
+                    {(()=>{
+                        if(localStorage.getItem('mode') === 'light'){
+                            return(
+                                <li><img src={Dark} alt="dark" onClick={()=>ChangeMode()}/></li>
+                            )
+                        }else{
+                            return(
+                                <li><img src={Light} alt="light" onClick={()=>ChangeMode()}/></li>
+                            )
+                        }
+                    })()}
+                </ul>
             </div>
         </section>
     );

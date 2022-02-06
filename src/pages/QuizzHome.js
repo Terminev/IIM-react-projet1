@@ -1,9 +1,12 @@
 import QuizzData from "../data/quizz.json";
 import QuizzCard from "../components/QuizzCard";
 import '../Sass/components/_QuizzHome.scss';
+import Nav from "../components/Nav";
 
 const QuizzHome = () => {
     return (
+        <>
+        <Nav></Nav>
         <section id="QuizzHome">
             <div id="QuizzContainer">
                 {
@@ -13,6 +16,7 @@ const QuizzHome = () => {
                 }
             </div>
         </section>
+        </>
     );
 };
 

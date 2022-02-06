@@ -2,6 +2,7 @@ import "../Sass/components/_QuizzOpen.scss";
 import React, { useState, useEffect } from 'react';
 import quizzData from '../data/quizz.json'
 import QuizzQuestions from "../components/QuizzQuestions";
+import Nav from "../components/Nav";
 
 const QuizzOpen = (props) => {
     // Recuperer l'id dans l'url
@@ -50,6 +51,8 @@ const QuizzOpen = (props) => {
     }
 
     return (
+        <>
+        <Nav></Nav>
         <section id="QuizzOpen">
             <div id="QuizzEnCours">
                 <h2>Score: {score} </h2>
@@ -70,6 +73,7 @@ const QuizzOpen = (props) => {
                 </div>
             </div>
         </section>
+        </>
     )
 };
 
