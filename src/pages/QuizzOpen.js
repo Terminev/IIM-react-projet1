@@ -1,12 +1,14 @@
 import "../Sass/components/_QuizzOpen.scss";
 import React, { useState, useEffect } from 'react';
 import quizzData from '../data/quizz.json'
+import QuizzQuestions from "../components/QuizzQuestions";
 
 const QuizzOpen = (props) => {
     // Recuperer l'id dans l'url
     const idQuizz = props.match.params.quizzId - 1
     // Recuperer les question en lien avec le Quizz
     const QuestionQuizz = quizzData.quizz[idQuizz].questions
+    // Initialisation des const avec useState
     const [count, setCount] = useState(0);
     const [score, setScore] = useState(0);
 
@@ -54,10 +56,7 @@ const QuizzOpen = (props) => {
                 <h3>{QuestionQuizz[count].titrequestion}</h3>
                 {
                     QuestionQuizz[count].reponses.map((data, index) => (
-                        <div key={index}>
-                            <input type="radio" id={index} name="quizz" value={data.reponse} />
-                            <label htmlFor={index} > {data.reponse} </label>
-                        </div>
+                        <QuizzQuestions key={index} index={index} reponse={data.reponse} />
                     ))
                 }
                 <button id="submit" onClick={()=> validation()}>Valider</button>
@@ -65,8 +64,10 @@ const QuizzOpen = (props) => {
             <div id="QuizzTermine">
                 <h2>Le Quizz est terminé</h2>
                 <p>Vous avez eu {score}/10</p>
-                <button><a href="/quizz">Accueil</a></button>
-                <button onClick={()=> relancer()}>Rejouer</button>
+                <div id="ButtonQuizzOver">
+                    <button><a href="/quizz">Accueil</a></button>
+                    <button onClick={()=> relancer()}>Rejouer</button>
+                </div>
             </div>
         </section>
     )
