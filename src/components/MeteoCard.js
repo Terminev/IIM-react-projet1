@@ -4,6 +4,7 @@ const MeteoCard = ({temp, name, icon}) => {
 
     const iconImg = 'http://openweathermap.org/img/wn/'+ icon +'@2x.png'
     return ( 
+        // Permets d'afficher la temperature
         <div id='MeteoCard'>
             <h2>Il fait actuellement:</h2>
             <div id='MeteoBackground'>

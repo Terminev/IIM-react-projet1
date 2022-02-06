@@ -10,8 +10,6 @@ const QuizzCard = ({theme, titre, img, id}) => {
                 <p>{theme}</p>
                 <h3>{titre}</h3>
                 {(()=> {
-                    
-
                     if(value != null){
                         return(
                             <h4>Votre Score: {value} / 10</h4>

@@ -7,7 +7,7 @@ const MeteoComponent = () => {
 
     const [data, setData] = useState('');
     const [ville, setVille]= useState('paris');
-
+    // Permets de faire le call API
     useEffect(() => {
         axios.get(
             'https://api.openweathermap.org/data/2.5/weather?q='+ville+'&appid=ea47585d5d7af6136536556b8101c20d&units=metric&lang=fr'
@@ -17,7 +17,7 @@ const MeteoComponent = () => {
         });
         
     }, [ville]);
-
+    // Permets d'enregistrer la nouvelle ville
     function submit(){
         const InputVille = document.getElementById('villeinput').value
         setVille(InputVille)
