@@ -1,5 +1,5 @@
 #Nav {
-    background-color: #451CC0;
+    background-color: #2e0f8b;
     width: 100%;
     div {
         width: 90%;
@@ -17,9 +17,22 @@
             font-size: 40px;
         }
         ul {
+            flex-wrap: wrap;
+            justify-content: flex-end;
             display: flex;
+            align-items: center;
             li{
                 list-style: none;
+                img {
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 10px;
+                    transition: all 0.3s ease-in-out;
+                }
+                img:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
                 a{
                     text-decoration: none;
                     color: white;

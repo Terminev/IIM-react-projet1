@@ -1,14 +1,21 @@
+import Nav from "../components/Nav";
 import "../Sass/components/_NofFound.scss"
 
 const NotFound = () => {
     return (
-        <div id="NotFound">
-            <div id="container">
-                <h1>Error 404</h1>
-                <p>Page Not found</p>
-                <a href="/">Return to Home</a>
+        <>
+        <Nav></Nav>
+        <section>
+            
+            <div id="NotFound">
+                <div id="container">
+                    <h1>Error 404</h1>
+                    <p>Page Not found</p>
+                    <a href="/">Return to Home</a>
+                </div>
             </div>
-        </div>
+        </section>
+        </>
     );
 };
 

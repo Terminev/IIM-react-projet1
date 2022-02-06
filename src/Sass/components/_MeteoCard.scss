@@ -1,0 +1,26 @@
+#MeteoCard{
+    text-align: center;
+    h2{
+        padding: 20px;
+    }
+    #MeteoBackground{
+        width: fit-content;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            h3{
+                padding: 10px;
+                font-size: 19px;
+            }
+            h4{
+                font-size: 19px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

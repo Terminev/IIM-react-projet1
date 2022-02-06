@@ -4,3 +4,12 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+// Permets de changer les couleurs pour le Dark mode
+.dark{
+    background-color: #181a1b;
+    color: white !important;
+    a{
+        color: white !important;
+    }
+}

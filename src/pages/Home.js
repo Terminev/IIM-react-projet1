@@ -1,9 +1,11 @@
 import '../Sass/components/_Home.scss';
-import imgHello from '../img/img/hello.png'
+import imgHello from '../img/img/hello.png';
+import Nav from '../components/Nav';
 
 const Home = () => {
-
     return (
+        <>
+        <Nav></Nav>
         <section id='home'>
             <div className='homeContainer'>
                 <div className='homeInformations'>
@@ -14,6 +16,7 @@ const Home = () => {
                 <img src={imgHello} alt="hello"/>
             </div>
         </section>
+        </>
     );
 };
 
