@@ -17,6 +17,8 @@
             font-size: 40px;
         }
         ul {
+            flex-wrap: wrap;
+            justify-content: end;
             display: flex;
             li{
                 list-style: none;

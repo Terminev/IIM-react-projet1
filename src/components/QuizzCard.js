@@ -3,7 +3,6 @@ import "../Sass/components/_QuizzCard.scss";
 const QuizzCard = ({theme, titre, img, id}) => {
     const link = '/quizz/' + id
     const value = window.localStorage.getItem("quizz" + id)
-    console.log(value);
     return (
         <section id="QuizzCard">
             <a href={link}>
