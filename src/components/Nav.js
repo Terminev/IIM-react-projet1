@@ -19,6 +19,7 @@ const Nav = () => {
                                 <li><a href="/cv">CV</a></li>
                                 <li><a href="/projets">Projets</a></li>
                                 <li><a href="/quizz">Quizz</a></li>
+                                <li><a href="/meteo">Météo</a></li>
                             </ul>
                         )
                     }
@@ -29,6 +30,7 @@ const Nav = () => {
                                 <li><a href="/cv" className="active">CV</a></li>
                                 <li><a href="/projets">Projets</a></li>
                                 <li><a href="/quizz">Quizz</a></li>
+                                <li><a href="/meteo">Météo</a></li>
                             </ul>
                         )
                     }
@@ -39,6 +41,7 @@ const Nav = () => {
                                 <li><a href="/cv">CV</a></li>
                                 <li><a href="/projets" className="active">Projets</a></li>
                                 <li><a href="/quizz">Quizz</a></li>
+                                <li><a href="/meteo">Météo</a></li>
                             </ul>
                         )
                     }else if (currentURL === '/quizz') {
@@ -48,6 +51,17 @@ const Nav = () => {
                                 <li><a href="/cv">CV</a></li>
                                 <li><a href="/projets">Projets</a></li>
                                 <li><a href="/quizz" className="active">Quizz</a></li>
+                                <li><a href="/meteo">Météo</a></li>
+                            </ul>
+                        )
+                    }else if (currentURL === '/meteo') {
+                        return (
+                            <ul>
+                                <li><a href="/">Accueil</a></li>
+                                <li><a href="/cv">CV</a></li>
+                                <li><a href="/projets">Projets</a></li>
+                                <li><a href="/quizz" >Quizz</a></li>
+                                <li><a href="/meteo" className="active">Météo</a></li>
                             </ul>
                         )
                     }else{
@@ -57,6 +71,7 @@ const Nav = () => {
                                 <li><a href="/cv">CV</a></li>
                                 <li><a href="/projets">Projets</a></li>
                                 <li><a href="/quizz">Quizz</a></li>
+                                <li><a href="/meteo">Météo</a></li>
                             </ul>
                         )
                     }
